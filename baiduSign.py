@@ -25,8 +25,8 @@ def shopLottery(bd):
 def signTieba(bd):
     "签到贴吧和知道"
 
-    print(f'开始为用户({bd.name})签到百度知道，百度知道，知道商城抽奖')
-    
+    print(f'开始为用户签到百度知道，百度知道，知道商城抽奖')
+    """
     #开始贴吧签到
     ii=0
     jj=0
@@ -54,7 +54,7 @@ def signTieba(bd):
         print(f'百度知道签到异常,原因({str(e)})')
     else:
         print(f'百度知道签到信息：{zd["info"]}')
-
+"""
     #下面是百度知道打卡任务
     try:
         zd = bd.zhidaoTask(176) #打卡任务id为176
