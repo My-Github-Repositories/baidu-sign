@@ -18,9 +18,9 @@ def shopLottery(bd):
     try:
         lott = bd.zhidaoShopLottery()
     except Exception as e:
-        print(f'{bd.name} 知道商城抽奖异常,原因({str(e)})')
+        print(f'用户知道商城抽奖异常,原因({str(e)})')
     else:
-        print(f'{bd.name} 知道商城抽奖信息：{lott["info"]}')
+        print(f'用户知道商城抽奖信息：{lott["info"]}')
 
 def signTieba(bd):
     "签到贴吧和知道"
@@ -54,7 +54,7 @@ def signTieba(bd):
         print(f'百度知道签到异常,原因({str(e)})')
     else:
         print(f'百度知道签到信息：{zd["info"]}')
-"""
+
     #下面是百度知道打卡任务
     try:
         zd = bd.zhidaoTask(176) #打卡任务id为176
@@ -62,7 +62,7 @@ def signTieba(bd):
         print(f'百度知道打卡任务异常,原因({str(e)})')
     else:
         print(f'百度知道打卡任务信息：{zd["info"]}')
-
+"""
 def main():
     cookies = os.environ.get("cookie")
     arr = cookies.split('\n')
